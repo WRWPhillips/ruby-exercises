@@ -1,3 +1,5 @@
+require 'pry-byebug'
+
 # First, we're going to practice reading the Stack Trace
 # Don't look at this method prior to running the test
 # Type 'rspec' into the terminal to run Rspec
@@ -51,6 +53,7 @@ end
 
 def yell_greeting(string)
   name = string
+  binding.pry
   name = name.downcase
   greeting = "WASSAP, #{name}!"
 end
